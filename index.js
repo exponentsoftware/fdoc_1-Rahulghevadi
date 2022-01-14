@@ -1,3 +1,4 @@
+//count number of words in an array
 const words = "I am a teacher and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?";
 function WordCount(str) {
     return str.split(" ").length;
@@ -5,7 +6,7 @@ function WordCount(str) {
 console.log("The number of words in the paragraph are:");
 console.log(WordCount(words));
 
-
+//clean text
 const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`;
 function cleanText(str) {
     return str.replace(/[^a-zA-Z ]/g, "");
@@ -13,7 +14,7 @@ function cleanText(str) {
 console.log('clean text is:')
 console.log(cleanText(sentence));
 
-//to display random number between 0-9, and 
+//to display 7 unique random numbers in an array
 var arr = [];
 const unique = {}
 while (arr.length < 7) {
